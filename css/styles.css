@@ -1,3 +1,35 @@
 .contact-phone, .contact-address, .contact-email {
   display: none;
 }
+
+.add-contact {
+    width: 40%;
+}
+
+.contact-list {
+  width: 80%;
+}
+
+.list {
+  float: left;
+  width: 150px;
+}
+
+.list p {
+  font-size: 25px;
+}
+
+.details {
+  float: left;
+  border-left: 1px solid #ccc;
+  padding-left: 30px;
+}
+
+.details h3 {
+  color: #888;
+  font-size: 15px;
+}
+
+.details p {
+  font-size: 20px;
+}
