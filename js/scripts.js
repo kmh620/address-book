@@ -18,7 +18,18 @@ $(function() {
   $("#contact").submit(function(event) {
     event.preventDefault();
     var name = $("#name").val();
-    $("#list").append("<li><p class='contact-name'>" + name + "</p></li>");
+    var address = $("#address").val();
+    var phone = $("#phone").val();
+    var email = $("#email").val();
+
+
+    var listText = "<li><p class='contact-name'>" + name + "</p>";
+    listText = listText + "<p class='contact-phone'>" + phone + "</p>";
+    listText = listText + "<p class='contact-address'>" + address + "</p>";
+    listText = listText + "<p class='contact-email'>" + email + "</p>";
+    listText = listText + "</li>";
+
+    $("#list").append(listText);
 
     makeClickable();
     // <li>
